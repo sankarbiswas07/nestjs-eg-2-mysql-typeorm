@@ -1,0 +1,4 @@
+@baseUrl = http://localhost:3001
+
+### Request 0 : CheckHealth
+GET {{baseUrl}}/users/health
