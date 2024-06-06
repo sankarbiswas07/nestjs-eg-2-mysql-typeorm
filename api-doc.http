@@ -1,4 +1,16 @@
-@baseUrl = http://localhost:3001
+@baseUrl = http://localhost:3000
 
-### Request 0 : CheckHealth
-GET {{baseUrl}}/users/health
+### Request 0 : GetAllUsers
+GET {{baseUrl}}/users
+
+### Request 1 : CreateOneUser
+POST {{baseUrl}}/users/create
+content-type: application/json
+
+{
+    "username": "12 Jhon",
+    "password": "121212"
+}
+
+### Request 2 : GetAllUsers
+GET {{baseUrl}}/users/1
