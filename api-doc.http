@@ -14,3 +14,13 @@ content-type: application/json
 
 ### Request 2 : GetAllUsers
 GET {{baseUrl}}/users/1
+
+
+### Request 3 : UpdateOneUser
+PUT {{baseUrl}}/users/1
+content-type: application/json
+
+{
+    "username": "1_hon",
+    "password": "121212"
+}
